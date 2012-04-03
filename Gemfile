@@ -8,7 +8,8 @@ gemspec
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
 gem 'simple_form'
-gem 'sortable', :path => "../sortable"
+gem 'sortable3', :git => "http://github.com/svishwamitra/sortable3.git"
+gem 'addressable', :git => "http://github.com/svishwamitra/addressable.git"
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing
