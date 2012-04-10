@@ -1,8 +1,35 @@
+GIT
+  remote: http://github.com/svishwamitra/addressable.git
+  revision: c1743d383438a28d5fabcba74e9975aabdeace16
+  specs:
+    addressable (0.0.1)
+      rails (~> 3.2.2)
+
+GIT
+  remote: http://github.com/svishwamitra/contacts.git
+  revision: 90f8989d42dcdfd35af493ea535022813dd46f6f
+  specs:
+    crm (0.0.1)
+      addressable
+      bootstrap-will_paginate
+      company
+      jquery-rails
+      rails (~> 3.2.2)
+      simple_form
+      will_paginate
+
+GIT
+  remote: http://github.com/svishwamitra/sortable3.git
+  revision: 53944534540d3f3dd64e964e25ee4bf21b70d935
+  specs:
+    sortable (0.0.1.alpha)
+
 PATH
   remote: .
   specs:
     company (0.0.1)
       rails (~> 3.2.2)
+      simple_form
 
 GEM
   remote: http://rubygems.org/
@@ -35,6 +62,8 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+    bootstrap-will_paginate (0.0.7)
+      will_paginate
     builder (3.0.0)
     erubis (2.7.0)
     hike (1.2.1)
@@ -44,13 +73,12 @@ GEM
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.6.5)
-    mail (2.4.3)
+    mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.17.2)
+    mime-types (1.18)
     multi_json (1.1.0)
-    pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -77,22 +105,32 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    simple_form (2.0.1)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.5)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.32)
+    tzinfo (0.3.33)
+    will_paginate (3.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable!
+  bootstrap-will_paginate
   company!
+  crm!
   jquery-rails
-  pg
-  rails (~> 3.2.2)
+  simple_form
+  sortable!
+  sqlite3
+  will_paginate

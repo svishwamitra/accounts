@@ -101,5 +101,15 @@ module Company
       @account = Account.find(params[:id])
       @contacts = @account.contacts
     end
+    
+    private
+    def like  
+      if ActiveRecord::Base.connection.adapter_name.downcase == 'postgresql'
+        'ilike'
+      else
+        'like'
+      end
+    end
+    
   end
 end

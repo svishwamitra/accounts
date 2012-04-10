@@ -7,8 +7,8 @@ require "company/version"
 Gem::Specification.new do |s|
   s.name        = "company"
   s.version     = Company::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Srikanth Vishwamitra", "Milind Kanchan"]
+  s.email       = ["svishwamitra@gmail.com", "milindkanchan@gmail.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of Company."
   s.description = "TODO: Description of Company."
